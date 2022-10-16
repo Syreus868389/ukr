@@ -64,6 +64,5 @@ for key in nlp_dict.keys():
 
 freq_df = pd.DataFrame.from_dict(counting_dict, orient='index', columns=['count'])
 
-#print(freq_df.sort_values('count', ascending=False))
+print(freq_df.sort_values('count', ascending=False))
 
-print(nlp_dict)

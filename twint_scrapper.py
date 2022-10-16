@@ -4,7 +4,7 @@ from deep_translator import LibreTranslator
 from spacy_handlers import *
 
 # the base query should be in english
-base_query = "ukraine kiev"
+base_query = "zelensky"
 
 languages = ['fr']
 queries = [base_query]
@@ -24,13 +24,12 @@ c = twint.Config()
 c.Custom = ['datestamp','username', 'name', 'user_id', 'tweet', 'hashtags', 'link', 'likes_count', 'replies_count', 'retweets_count', 'lang']
 c.Filter_retweets = True
 c.Retries_count = 40
-c.Until = "2022-10-01"
-c.Since = "2022-10-13"
+c.Until = "2022-10-15"
+c.Since = "2022-10-01"
 c.Utc = False
 c.Full_text = False
 c.Store_object = True
 c.Count = True
-c.Hide_output = False
 
 main_id = 0
 
